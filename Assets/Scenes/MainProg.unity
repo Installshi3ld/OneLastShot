@@ -251,6 +251,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &741934224 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1779882822101157020, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+  m_PrefabInstance: {fileID: 1996648981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1285441286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6927982072615602217, guid: f5023cd1c6811964cbce6e9a5fec0d8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.08
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 6927982072615602217, guid: f5023cd1c6811964cbce6e9a5fec0d8b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -491,6 +496,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2641944319960605374, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 741934224}
+    - target: {fileID: 2641944319960605374, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: edgeCollider
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3507489851226641687, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -533,7 +546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8274034215158000672, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8274034215158000672, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: ground.m_Bits
