@@ -13,5 +13,6 @@ public class S_SpawnerObject : MonoBehaviour
     {
         tmpObjectSpawned = Instantiate(ObjectToSpawn, SpawnPoint.transform.position, Quaternion.identity);
         tmpObjectSpawned.transform.parent = Player.transform;
+        print("tfgujh");
     }
 }

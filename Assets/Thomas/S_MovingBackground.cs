@@ -24,6 +24,6 @@ public class S_MovingBackground : MonoBehaviour
 
         if (temp > startpos + lenght) startpos += lenght;
         else if(temp < startpos - lenght) startpos -= lenght;
-        Debug.Log($"Temp: {temp}, lenght: {lenght}");
+
     }
 }

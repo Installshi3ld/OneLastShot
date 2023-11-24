@@ -10,7 +10,7 @@ public class S_KillPlayer : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             StopAllCoroutines();
-            SceneManager.LoadScene("MainProg");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
