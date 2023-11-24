@@ -66,7 +66,6 @@ public class S_PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         print("Collision enter");
-        StopAllCoroutines();
         player1Jump = false;
         player2Jump = false;
     }
