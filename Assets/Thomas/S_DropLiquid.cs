@@ -8,7 +8,16 @@ public class S_DropLiquid : MonoBehaviour
 
     private void Start()
     {
-        Instantiate(Liquid, gameObject.transform);
+        StartCoroutine(test());
+    }
+
+    IEnumerator test()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.1f);
+            Instantiate(Liquid, gameObject.transform);
+        }
     }
 
 }
