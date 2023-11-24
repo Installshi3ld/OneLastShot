@@ -26,9 +26,10 @@ public class S_PlayerMovement : MonoBehaviour
         rb.gravityScale = gravity;
         groundCheck = transform.Find("GroundCheck");
     }
+
     private void Update()
     {
-        transform.position += Vector3.right * playerSpeed.value * Time.deltaTime;
+        //transform.position += Vector3.right * playerSpeed.value * Time.deltaTime;
 
         if ((Isgrounded() || player2Jump) && Input.GetKeyDown(KeyCode.Space))
         {
