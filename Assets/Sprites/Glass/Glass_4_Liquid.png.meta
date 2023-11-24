@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 62d14e8e106e5984bba7ec732ae8a0d8
+guid: d9f1b8b147c73f443931a5e025e53cf7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8168814265265094644
-    second: Glass_4_0
-  - first:
-      213: 4112559453060489315
-    second: Glass_4_1
-  - first:
-      213: 5732010947290727781
-    second: Glass_4_2
+      213: 7267809009350486176
+    second: Glass_4_Liquid_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Glass_4_0
+      name: Glass_4_Liquid_0
       rect:
         serializedVersion: 2
-        x: 226
-        y: 63
-        width: 1562
-        height: 1915
+        x: 245
+        y: 109
+        width: 525
+        height: 696
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,50 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fff4454b457d5170800000000000000
-      internalID: 8168814265265094644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glass_4_1
-      rect:
-        serializedVersion: 2
-        x: 1786
-        y: 1625
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3606855880fb21930800000000000000
-      internalID: 4112559453060489315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glass_4_2
-      rect:
-        serializedVersion: 2
-        x: 1775
-        y: 1604
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5650ae946913c8f40800000000000000
-      internalID: 5732010947290727781
+      spriteID: 0a828b999c17cd460800000000000000
+      internalID: 7267809009350486176
       vertices: []
       indices: 
       edges: []
@@ -181,14 +133,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Glass_4_Liquid_0: 7267809009350486176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

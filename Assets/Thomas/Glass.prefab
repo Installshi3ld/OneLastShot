@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166081146162776710}
-  - component: {fileID: 2144063241459877144}
+  - component: {fileID: 3791419297259712068}
+  - component: {fileID: 7293609338631182174}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
@@ -30,17 +31,46 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1739692067445951152}
   - {fileID: 4424263940947183815}
+  - {fileID: 1739692067445951152}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2144063241459877144
-BoxCollider:
+--- !u!114 &3791419297259712068
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4003645220853060436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547d1f5f97039bd41a50c9afe2b61d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glassFilling: {fileID: 11400000, guid: 6ebbf484f79eb564e977335a1fae8e2d, type: 2}
+  glassFillingText: {fileID: 0}
+  glass: {fileID: 8182730340320641877}
+  liquid: {fileID: 4080608624776220846}
+  glassLiquid:
+  - {fileID: 21300000, guid: b5be34a623c763448b05820b5b0deacf, type: 3}
+  - {fileID: 21300000, guid: 39ff073c6b4067f4fac21d5d3ba58544, type: 3}
+  - {fileID: 21300000, guid: dce7f63fd6d4ba74aa183acb9d4e9456, type: 3}
+  - {fileID: 21300000, guid: d9f1b8b147c73f443931a5e025e53cf7, type: 3}
+  glassOutside:
+  - {fileID: -4290956392920245570, guid: b234e91eceb280e488e221415b8190a8, type: 3}
+  - {fileID: -5467290713080887529, guid: 6589d78db124a5a4eb2ac8891187d59f, type: 3}
+  - {fileID: -2568178605192306507, guid: b74d0c912079ddd439e090148681d4df, type: 3}
+  - {fileID: 8168814265265094644, guid: 8d7119f5c3c380846be79c684bbf67c9, type: 3}
+--- !u!61 &7293609338631182174
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003645220853060436}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -49,12 +79,34 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 4.15, y: 7.44}
+  m_EdgeRadius: 0
 --- !u!1 &4080608624776220846
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,16 +179,16 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7267809009350486176, guid: d9f1b8b147c73f443931a5e025e53cf7, type: 3}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.25, y: 6.96}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8182730340320641877
