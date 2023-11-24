@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.SearchService;
+
 
 public class S_VolumeSettings : MonoBehaviour
 {
