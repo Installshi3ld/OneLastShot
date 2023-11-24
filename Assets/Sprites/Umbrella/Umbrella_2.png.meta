@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b74d0c912079ddd439e090148681d4df
+guid: 3ffe59a93ec2a4a4ba76b245328356a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2568178605192306507
-    second: Glass_3_0
-  - first:
-      213: 2225068187283445537
-    second: Glass_3_1
+      213: -5626833501858823841
+    second: Umbrella_2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -113,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Glass_3_0
+      name: Umbrella_2_0
       rect:
         serializedVersion: 2
-        x: 113
-        y: 30
-        width: 785
-        height: 959
+        x: 241
+        y: 0
+        width: 476
+        height: 1023
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,29 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b021c55a2ffb5cd0800000000000000
-      internalID: -2568178605192306507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glass_3_1
-      rect:
-        serializedVersion: 2
-        x: 887
-        y: 801
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1275d083ab701ee10800000000000000
-      internalID: 2225068187283445537
+      spriteID: f5100770eb879e1b0800000000000000
+      internalID: -5626833501858823841
       vertices: []
       indices: 
       edges: []
@@ -164,9 +140,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Glass_3_0: -2568178605192306507
-      Glass_3_1: 2225068187283445537
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
