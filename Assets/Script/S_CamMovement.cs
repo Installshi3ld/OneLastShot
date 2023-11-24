@@ -5,10 +5,8 @@ using UnityEngine;
 
 public class S_CamMovement : MonoBehaviour
 {
-    public S_PlayerSpeed playerSpeed;
-
     private void Update()
     {
-        transform.position += Vector3.right * playerSpeed.value * Time.deltaTime;
+        transform.position = new Vector3(transform.position.x,0,transform.position.z);
     }
 }
