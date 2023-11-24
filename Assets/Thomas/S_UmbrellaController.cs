@@ -10,6 +10,8 @@ public class S_UmbrellaController : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
         positionInitiale = Input.mousePosition;
     }
 
