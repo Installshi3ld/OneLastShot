@@ -16,8 +16,10 @@ public class S_DropLiquid : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(0.1f);
-            Instantiate(Liquid, gameObject.transform);
+            Instantiate(Liquid, gameObject.transform.position, Quaternion.identity);
         }
     }
+
+
 
 }

@@ -164,7 +164,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Umbrella_export_0: -6738106264223176350
+      Umbrella_export_1: -8692595034735621050
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
