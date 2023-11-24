@@ -29,7 +29,6 @@ public class S_GlassFilling : MonoBehaviour
 
             liquid.GetComponent<SpriteRenderer>().sprite = glassLiquid[(int)glassFilling.value / 25];
             glass.GetComponent<SpriteRenderer>().sprite = glassOutside[(int)glassFilling.value / 25];
-            print("fzeefz");
         }
     }
 }
