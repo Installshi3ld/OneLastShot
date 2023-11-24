@@ -164,7 +164,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IceCube_0: 8065230681185555814
+      IceCube_1: 7824568129348681288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
