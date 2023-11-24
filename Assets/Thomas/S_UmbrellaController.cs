@@ -20,7 +20,7 @@ public class S_UmbrellaController : MonoBehaviour
         float rotationX = (Input.mousePosition.x - positionInitiale.x) * vitesseRotation;
 
         totalRotation += rotationX * Time.deltaTime;
-        totalRotation = Mathf.Clamp(totalRotation, -30f, 30f);
+        totalRotation = Mathf.Clamp(totalRotation, -40f, 40f);
 
         Vector3 newRotation = new Vector3(0f, 0f, -totalRotation);
 
