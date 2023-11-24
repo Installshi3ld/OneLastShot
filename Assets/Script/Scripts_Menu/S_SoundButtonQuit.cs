@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class S_SoundButtonPlay : MonoBehaviour
+public class S_SoundButtonQuit : MonoBehaviour
 {
     public AudioSource soundPlayer;
-    
 
 
 
@@ -13,5 +12,4 @@ public class S_SoundButtonPlay : MonoBehaviour
     {
         soundPlayer.Play();
     }
-
 }

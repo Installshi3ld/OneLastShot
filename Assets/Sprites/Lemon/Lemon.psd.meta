@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 6eca45ec7e3fcf5478c5e9e7b44b779b
+guid: f57345e86fa853c49a05ebcace9a68f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6738106264223176350
-    second: Umbrella_export_0
-  - first:
-      213: -8692595034735621050
-    second: Umbrella_export_1
+      213: 8025649199667744028
+    second: Lemon_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -113,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Umbrella_export_0
+      name: Lemon_0
       rect:
         serializedVersion: 2
-        x: 95
+        x: 0
         y: 0
-        width: 829
+        width: 1024
         height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -127,29 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 269a42e7d007d72a0800000000000000
-      internalID: -6738106264223176350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Umbrella_export_1
-      rect:
-        serializedVersion: 2
-        x: 921
-        y: 648
-        width: 8
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 64c424a0fd2bd5780800000000000000
-      internalID: -8692595034735621050
+      spriteID: c1d0816ec65d06f60800000000000000
+      internalID: 8025649199667744028
       vertices: []
       indices: 
       edges: []
@@ -164,9 +140,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Umbrella_export_0: -6738106264223176350
-      Umbrella_export_1: -8692595034735621050
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

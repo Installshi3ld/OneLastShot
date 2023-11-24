@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Glass_4_Liquid_0: 7267809009350486176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
