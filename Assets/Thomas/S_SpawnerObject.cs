@@ -11,8 +11,8 @@ public class S_SpawnerObject : MonoBehaviour
     private GameObject tmpObjectSpawned;
     private void OnTriggerEnter(Collider other)
     {
-        tmpObjectSpawned = Instantiate(ObjectToSpawn, SpawnPoint.transform.position, Quaternion.identity);
-        tmpObjectSpawned.transform.parent = Player.transform;
         print("tfgujh");
+        tmpObjectSpawned = Instantiate(ObjectToSpawn);
+        //tmpObjectSpawned.transform.parent = Player.transform;
     }
 }

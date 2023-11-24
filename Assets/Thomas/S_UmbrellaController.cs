@@ -23,7 +23,7 @@ public class S_UmbrellaController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             isOpen = !isOpen;
             boxCollider.enabled = isOpen;
