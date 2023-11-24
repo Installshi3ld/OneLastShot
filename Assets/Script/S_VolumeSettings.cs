@@ -61,6 +61,14 @@ public class S_VolumeSettings : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            OpenSettings();
+        }
+    }
+
     public void OpenSettings()
     {
         if (!settingsOpen)
