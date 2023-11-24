@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.SearchService;
+
 
 public class S_VolumeSettings : MonoBehaviour
 {
@@ -58,6 +58,14 @@ public class S_VolumeSettings : MonoBehaviour
         {
             SetMusicvolume();
             SetSFXvolume();
+        }
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            OpenSettings();
         }
     }
 
