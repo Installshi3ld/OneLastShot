@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 56232a6de5be4b64493bd793ba1e6183
+guid: 41ebc1fd8b364e447904e1f49b1a5b3c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5467290713080887529
-    second: Glass_2_0
+      213: -6311721938626050956
+    second: Glass_2_Liquid_0
   - first:
-      213: -4925818017075364282
-    second: Glass_2_1
-  - first:
-      213: -8069125013460450101
-    second: Glass_2_2
+      213: -2769045476573328080
+    second: Glass_2_Liquid_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Glass_2_0
+      name: Glass_2_Liquid_0
       rect:
         serializedVersion: 2
-        x: 226
-        y: 63
-        width: 1562
-        height: 1915
+        x: 330
+        y: 432
+        width: 34
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 717850b30184024b0800000000000000
-      internalID: -5467290713080887529
+      spriteID: 474872776524868a0800000000000000
+      internalID: -6311721938626050956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Glass_2_1
+      name: Glass_2_Liquid_1
       rect:
         serializedVersion: 2
-        x: 1786
-        y: 1625
-        width: 8
-        height: 8
+        x: 319
+        y: 97
+        width: 374
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,29 +148,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64ef0009c9af3abb0800000000000000
-      internalID: -4925818017075364282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glass_2_2
-      rect:
-        serializedVersion: 2
-        x: 1775
-        y: 1604
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc488746d85b40090800000000000000
-      internalID: -8069125013460450101
+      spriteID: 03dc1f16fcf5299d0800000000000000
+      internalID: -2769045476573328080
       vertices: []
       indices: 
       edges: []

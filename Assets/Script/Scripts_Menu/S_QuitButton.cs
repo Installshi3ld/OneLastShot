@@ -6,7 +6,13 @@ public class S_QuitButton : MonoBehaviour
 {
     public void QuitGame()
     {
-        Application.Quit();
+        StartCoroutine(SoundQuit());
     }
     
+    public IEnumerator SoundQuit()
+    {
+        yield return new WaitForSeconds(1);
+        Application.Quit();
+       
+    }
 }
