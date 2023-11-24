@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2821211350786139723}
   m_Layer: 0
   m_Name: Drip
-  m_TagString: Untagged
+  m_TagString: drip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 1335993998882489518}
   m_Layer: 6
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: drip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
