@@ -24,7 +24,8 @@ public class S_GlassFilling : MonoBehaviour
         {
             Destroy(collision.gameObject);
             glassFilling.value = Mathf.Clamp(glassFilling.value + 1, 0, 99);
-            glassFillingText.text = glassFilling.value.ToString();
+            if(glassFillingText)
+                glassFillingText.text = glassFilling.value.ToString();
 
             liquid.GetComponent<SpriteRenderer>().sprite = glassLiquid[(int)glassFilling.value / 25];
             glass.GetComponent<SpriteRenderer>().sprite = glassOutside[(int)glassFilling.value / 25];
