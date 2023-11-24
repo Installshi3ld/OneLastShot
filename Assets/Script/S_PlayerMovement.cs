@@ -29,7 +29,7 @@ public class S_PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        //transform.position += Vector3.right * playerSpeed.value * Time.deltaTime;
+        transform.position += Vector3.right * playerSpeed.value * Time.deltaTime;
 
         if ((Isgrounded() || player2Jump) && Input.GetKeyDown(KeyCode.Space))
         {
