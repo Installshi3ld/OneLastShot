@@ -492,6 +492,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 323307831884461166, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_Size.x
+      value: 7.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 323307831884461166, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_Size.y
+      value: 1.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 323307831884461166, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2806225556135725475, guid: 4580dfdaaf3811e47bdbf32b68bbc8bc, type: 3}
+    - target: {fileID: 323307831884461166, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383104228979014654, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_Size.x
+      value: 7.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383104228979014654, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_Size.y
+      value: 9.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383104228979014654, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8047815553831313411, guid: 0c36423bf0e2da24d8e9d4d52763b388, type: 3}
+    - target: {fileID: 1383104228979014654, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2303831516481364974, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: m_Name
       value: Player
@@ -544,6 +576,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3838655202913075523, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407830312595006445, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274034215158000672, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: jumpPower
+      value: 15000
+      objectReference: {fileID: 0}
     - target: {fileID: 8274034215158000672, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -551,6 +595,42 @@ PrefabInstance:
     - target: {fileID: 8274034215158000672, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: ground.m_Bits
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: 'glassLiquid.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ddadaa09fab9ea4e9c8b6769486e6e1, type: 3}
+    - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: 'glassLiquid.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 41ebc1fd8b364e447904e1f49b1a5b3c, type: 3}
+    - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: 'glassLiquid.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 455b1de01761eeb4091d031f9ae9831c, type: 3}
+    - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: 'glassLiquid.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: b9082f3c36fbd454e9c8a30643d22e6d, type: 3}
+    - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: 'glassOutside.Array.data[0]'
+      value: 
+      objectReference: {fileID: -4290956392920245570, guid: 9755fa8c10ef59842a167ea79183e699, type: 3}
+    - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: 'glassOutside.Array.data[1]'
+      value: 
+      objectReference: {fileID: -5467290713080887529, guid: 5de235d56e312114eb8829f5246deb84, type: 3}
+    - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: 'glassOutside.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2568178605192306507, guid: b86516ec76ef9eb408c2404f10863378, type: 3}
+    - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: 'glassOutside.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8168814265265094644, guid: 0f6f741e53c25d9479c91622bb399362, type: 3}
+    - target: {fileID: 9147516053022697912, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
