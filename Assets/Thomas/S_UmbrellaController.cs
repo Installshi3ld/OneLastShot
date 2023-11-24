@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 public class S_UmbrellaController : MonoBehaviour
@@ -8,6 +9,11 @@ public class S_UmbrellaController : MonoBehaviour
     private Vector3 positionInitiale;
     private float totalRotation = 0f;
 
+    private bool isOpen = false;
+    public BoxCollider2D boxCollider;
+
+    public Animator animator;
+    
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -17,10 +23,17 @@ public class S_UmbrellaController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            isOpen = !isOpen;
+            boxCollider.enabled = isOpen;
+            animator.SetBool("OpenUmbrella", isOpen);
+        }
+
         float rotationX = (Input.mousePosition.x - positionInitiale.x) * vitesseRotation;
 
         totalRotation += rotationX * Time.deltaTime;
-        totalRotation = Mathf.Clamp(totalRotation, -30f, 30f);
+        totalRotation = Mathf.Clamp(totalRotation, -40f, 40f);
 
         Vector3 newRotation = new Vector3(0f, 0f, -totalRotation);
 

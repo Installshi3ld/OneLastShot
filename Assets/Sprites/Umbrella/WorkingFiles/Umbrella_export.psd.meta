@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Umbrella/Umbrella_4.png.meta
+guid: 10157d84517895741b17727b4c31bfc1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2192802886911570963
+    second: Umbrella_4_0
+  - first:
+      213: 5572059501505552197
+    second: Umbrella_4_1
+========
+guid: 6eca45ec7e3fcf5478c5e9e7b44b779b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6738106264223176350
+    second: Umbrella_export_0
+  - first:
+      213: -8692595034735621050
+    second: Umbrella_export_1
+>>>>>>>> 770ea1dfeb0f1ed2bf51e02e5f7a78ff8123b434:Assets/Sprites/Umbrella/WorkingFiles/Umbrella_export.psd.meta
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Umbrella/Umbrella_4.png.meta
+      name: Umbrella_4_0
+========
+      name: Umbrella_export_0
+>>>>>>>> 770ea1dfeb0f1ed2bf51e02e5f7a78ff8123b434:Assets/Sprites/Umbrella/WorkingFiles/Umbrella_export.psd.meta
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 829
+<<<<<<<< HEAD:Assets/Sprites/Umbrella/Umbrella_4.png.meta
+        height: 1019
+========
+        height: 1024
+>>>>>>>> 770ea1dfeb0f1ed2bf51e02e5f7a78ff8123b434:Assets/Sprites/Umbrella/WorkingFiles/Umbrella_export.psd.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+<<<<<<<< HEAD:Assets/Sprites/Umbrella/Umbrella_4.png.meta
+      spriteID: 314b0d09b966e6e10800000000000000
+      internalID: 2192802886911570963
+========
+      spriteID: 269a42e7d007d72a0800000000000000
+      internalID: -6738106264223176350
+>>>>>>>> 770ea1dfeb0f1ed2bf51e02e5f7a78ff8123b434:Assets/Sprites/Umbrella/WorkingFiles/Umbrella_export.psd.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Umbrella/Umbrella_4.png.meta
+      name: Umbrella_4_1
+========
+      name: Umbrella_export_1
+>>>>>>>> 770ea1dfeb0f1ed2bf51e02e5f7a78ff8123b434:Assets/Sprites/Umbrella/WorkingFiles/Umbrella_export.psd.meta
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 648
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+<<<<<<<< HEAD:Assets/Sprites/Umbrella/Umbrella_4.png.meta
+      spriteID: 54f1496389ee35d40800000000000000
+      internalID: 5572059501505552197
+========
+      spriteID: 64c424a0fd2bd5780800000000000000
+      internalID: -8692595034735621050
+>>>>>>>> 770ea1dfeb0f1ed2bf51e02e5f7a78ff8123b434:Assets/Sprites/Umbrella/WorkingFiles/Umbrella_export.psd.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+<<<<<<<< HEAD:Assets/Sprites/Umbrella/Umbrella_4.png.meta
+    nameFileIdTable: {}
+========
+    nameFileIdTable:
+      Umbrella_export_0: -6738106264223176350
+      Umbrella_export_1: -8692595034735621050
+>>>>>>>> 770ea1dfeb0f1ed2bf51e02e5f7a78ff8123b434:Assets/Sprites/Umbrella/WorkingFiles/Umbrella_export.psd.meta
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

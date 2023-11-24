@@ -32,14 +32,14 @@ public class S_PlayerMovement : MonoBehaviour
 
         if ((Isgrounded() || player2Jump) && Input.GetKeyDown(KeyCode.Space))
         {
-            print("Space Pressed");
+            //print("Space Pressed");
             player1Jump = true;
             player2Jump = false;
             Jump();
         }
         if ((Isgrounded() || player1Jump) && Input.GetKeyDown(KeyCode.UpArrow))
         {
-            print("UpArrow Pressed");
+            //print("UpArrow Pressed");
             player2Jump = true;
             player1Jump = false;
             Jump();
@@ -65,8 +65,7 @@ public class S_PlayerMovement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("Collision enter");
-        StopAllCoroutines();
+        //print("Collision enter");
         player1Jump = false;
         player2Jump = false;
     }
