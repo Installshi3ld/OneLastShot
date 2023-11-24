@@ -30,8 +30,8 @@ public class S_PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if(startAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 )
-            transform.position += Vector3.right * playerSpeed.value * Time.deltaTime;
+        //if(startAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 )
+        transform.position += Vector3.right * playerSpeed.value * Time.deltaTime;
 
         if ((Isgrounded() || player2Jump) && Input.GetKeyDown(KeyCode.Space))
         {
