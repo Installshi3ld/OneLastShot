@@ -4,8 +4,7 @@ using UnityEngine;
 
 
 
-public class MyScriptableObject<T> : ScriptableObject
+public class S_Data<T> : ScriptableObject
 {
     public T value;
-
 }
