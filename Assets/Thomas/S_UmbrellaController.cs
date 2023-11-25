@@ -21,6 +21,10 @@ public class S_UmbrellaController : MonoBehaviour
 
     public Rigidbody2D rb;
     private S_PlayerGravity gravity;
+
+    public AudioSource audioSourceOpenning;
+    public AudioSource audioSourceClosed;
+
     void Start()
     {
         gravity.value = gravityDefault;
