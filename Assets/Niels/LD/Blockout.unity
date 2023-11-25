@@ -318,6 +318,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64c315ebd6468954f8892b3a885d34ef, type: 3}
+--- !u!4 &78586914 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2101071864730681672, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+  m_PrefabInstance: {fileID: 1996648981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &99789069 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 958379163261854000, guid: 6ce189275789dd8498fd96cf4c961cab, type: 3}
@@ -2574,6 +2579,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 958379163261854000, guid: 6ce189275789dd8498fd96cf4c961cab, type: 3}
   m_PrefabInstance: {fileID: 202922238}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1320261336
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1429277078071216747, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_Name
+      value: Barman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243253542483306294, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b2e8f42f3b183f4aba043f647a12d91, type: 3}
 --- !u!1001 &1336776671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4399,6 +4461,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8274034215158000672, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: checkGround
+      value: 
+      objectReference: {fileID: 78586914}
+    - target: {fileID: 8274034215158000672, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: jumpStrength
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274034215158000672, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: ground.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -4904,6 +4974,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 615460298}
+  - {fileID: 1320261336}
   - {fileID: 1996648981}
   - {fileID: 2080082051}
   - {fileID: 422983630}

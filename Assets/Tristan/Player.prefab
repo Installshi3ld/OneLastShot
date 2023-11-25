@@ -251,11 +251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f693063bebaf7d14e8270135d86c5254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startAnimation: {fileID: 0}
+  startAnimation: {fileID: 4177056142406807795}
   playerSpeed: {fileID: 11400000, guid: 27bec1e094b9dc3439be599901b4be10, type: 2}
-  jumpPower: 15
-  gravity: 5
-  jumpTiming: 0.2
+  jumpStrength: 15
+  checkGround: {fileID: 5151441061634533180}
   ground:
     serializedVersion: 2
     m_Bits: 64
@@ -274,7 +273,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
