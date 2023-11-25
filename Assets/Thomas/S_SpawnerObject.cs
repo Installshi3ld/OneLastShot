@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class S_SpawnerObject : MonoBehaviour
 {
-    public GameObject ObjectToSpawn;
+    public List<GameObject> ObjectSpawnable;
     public GameObject Player;
     public GameObject SpawnPoint;
 
     private GameObject tmpObjectSpawned;
-    private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("tfgujh");
-        tmpObjectSpawned = Instantiate(ObjectToSpawn);
-        //tmpObjectSpawned.transform.parent = Player.transform;
+        if (collision.gameObject.tag == "Player")
+        {
+            if(ObjectSpawnable.Count == 1)
+            {
+                tmpObjectSpawned = Instantiate(ObjectSpawnable[0], SpawnPoint.transform.position, Quaternion.identity);
+                tmpObjectSpawned.transform.parent = Player.transform;
+            }
+            else
+            {
+                tmpObjectSpawned = Instantiate(ObjectSpawnable[Random.Range(0, ObjectSpawnable.Count)], SpawnPoint.transform.position, Quaternion.identity);
+                tmpObjectSpawned.transform.parent = Player.transform;
+            }
+        }
     }
+
 }

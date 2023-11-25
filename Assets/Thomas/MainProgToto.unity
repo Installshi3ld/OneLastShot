@@ -500,13 +500,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: S_SpawnerObject
       objectReference: {fileID: 0}
+    - target: {fileID: 4229706421987386958, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229706421987386958, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5120753570682177257, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635351951704230476, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 593234442}
+    - target: {fileID: 7635351951704230476, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: ObjectToSpawn
+      value: 
+      objectReference: {fileID: 140493587612500266, guid: ee146729f91e6c14d84efe5d3b97f59a, type: 3}
+    - target: {fileID: 7635351951704230476, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: ObjectSpawnable.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635351951704230476, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: 'ObjectSpawnable.Array.data[0]'
+      value: 
+      objectReference: {fileID: 140493587612500266, guid: e00fd23e3cb466c44989bc438968b7b9, type: 3}
+    - target: {fileID: 7635351951704230476, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: 'ObjectSpawnable.Array.data[1]'
+      value: 
+      objectReference: {fileID: 140493587612500266, guid: 56a7db37dd9c61544979cbda38500603, type: 3}
+    - target: {fileID: 7635351951704230476, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: 'ObjectSpawnable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 140493587612500266, guid: b0212ca50b31be94d8d1c2b6c4b3f11b, type: 3}
+    - target: {fileID: 7635351951704230476, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: 'ObjectSpawnable.Array.data[3]'
+      value: 
+      objectReference: {fileID: 140493587612500266, guid: e413d10453c66404a9e2c85f358fab8c, type: 3}
     - target: {fileID: 8508916175163774007, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.57
+      value: 19.89
       objectReference: {fileID: 0}
     - target: {fileID: 8508916175163774007, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.61
+      value: -2.8
       objectReference: {fileID: 0}
     - target: {fileID: 8508916175163774007, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -540,7 +580,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8553616067981317425, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553616067981317425, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1416478017232490819, guid: 55ffcc122d2e3b84e8748f13a433a96d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1393,19 +1442,19 @@ PrefabInstance:
     - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: 'glassOutside.Array.data[0]'
       value: 
-      objectReference: {fileID: -4290956392920245570, guid: 9755fa8c10ef59842a167ea79183e699, type: 3}
+      objectReference: {fileID: 21300000, guid: 9755fa8c10ef59842a167ea79183e699, type: 3}
     - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: 'glassOutside.Array.data[1]'
       value: 
-      objectReference: {fileID: -5467290713080887529, guid: 5de235d56e312114eb8829f5246deb84, type: 3}
+      objectReference: {fileID: 21300000, guid: 5de235d56e312114eb8829f5246deb84, type: 3}
     - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: 'glassOutside.Array.data[2]'
       value: 
-      objectReference: {fileID: -2568178605192306507, guid: b86516ec76ef9eb408c2404f10863378, type: 3}
+      objectReference: {fileID: 21300000, guid: b86516ec76ef9eb408c2404f10863378, type: 3}
     - target: {fileID: 8297067368535834030, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: 'glassOutside.Array.data[3]'
       value: 
-      objectReference: {fileID: 8168814265265094644, guid: 0f6f741e53c25d9479c91622bb399362, type: 3}
+      objectReference: {fileID: 21300000, guid: 0f6f741e53c25d9479c91622bb399362, type: 3}
     - target: {fileID: 9147516053022697912, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: m_Enabled
       value: 0

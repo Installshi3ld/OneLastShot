@@ -36,8 +36,8 @@ Transform:
   - {fileID: 2165685247729151680}
   - {fileID: 2186175698840430196}
   - {fileID: 2101071864730681672}
-  - {fileID: 5041428903949097324}
   - {fileID: 345325640892908452}
+  - {fileID: 5270598605206574784}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8274034215158000672
@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f693063bebaf7d14e8270135d86c5254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startAnimation: {fileID: 0}
   playerSpeed: {fileID: 11400000, guid: 27bec1e094b9dc3439be599901b4be10, type: 2}
   jumpPower: 15
   gravity: 5
@@ -523,7 +524,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2436450060446655012, guid: 1017c0041c997b248b732ba05990baaa, type: 3}
   m_PrefabInstance: {fileID: 2673684336265879936}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5168101628144374762
+--- !u!1001 &5434407059760995398
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -587,101 +588,17 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3791419297259712068, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: 'glassLiquid.Array.data[0]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 9ddadaa09fab9ea4e9c8b6769486e6e1, type: 3}
-    - target: {fileID: 3791419297259712068, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: 'glassLiquid.Array.data[1]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 41ebc1fd8b364e447904e1f49b1a5b3c, type: 3}
-    - target: {fileID: 3791419297259712068, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: 'glassLiquid.Array.data[2]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 455b1de01761eeb4091d031f9ae9831c, type: 3}
-    - target: {fileID: 3791419297259712068, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: 'glassLiquid.Array.data[3]'
-      value: 
-      objectReference: {fileID: 21300000, guid: b9082f3c36fbd454e9c8a30643d22e6d, type: 3}
-    - target: {fileID: 3791419297259712068, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: 'glassOutside.Array.data[0]'
-      value: 
-      objectReference: {fileID: -4290956392920245570, guid: 9755fa8c10ef59842a167ea79183e699, type: 3}
-    - target: {fileID: 3791419297259712068, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: 'glassOutside.Array.data[1]'
-      value: 
-      objectReference: {fileID: -5467290713080887529, guid: 5de235d56e312114eb8829f5246deb84, type: 3}
-    - target: {fileID: 3791419297259712068, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: 'glassOutside.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2568178605192306507, guid: b86516ec76ef9eb408c2404f10863378, type: 3}
-    - target: {fileID: 3791419297259712068, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: 'glassOutside.Array.data[3]'
-      value: 
-      objectReference: {fileID: 8168814265265094644, guid: 0f6f741e53c25d9479c91622bb399362, type: 3}
     - target: {fileID: 4003645220853060436, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
       propertyPath: m_Name
       value: Glass
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003645220853060436, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4080608624776220846, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4883124438590744452, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Size.x
-      value: 15.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 4883124438590744452, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Size.y
-      value: 19.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4883124438590744452, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4883124438590744452, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091414244564903956, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Size.x
-      value: 7.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091414244564903956, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Size.y
-      value: 9.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091414244564903956, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -8047815553831313411, guid: 0c36423bf0e2da24d8e9d4d52763b388, type: 3}
-    - target: {fileID: 6091414244564903956, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7293609338631182174, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Size.x
-      value: 6.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 7293609338631182174, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Offset.y
-      value: 2.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 8182730340320641877, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
---- !u!4 &5041428903949097324 stripped
+--- !u!4 &5270598605206574784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 166081146162776710, guid: b33013af1cf10034482df1a4af55b2ee, type: 3}
-  m_PrefabInstance: {fileID: 5168101628144374762}
+  m_PrefabInstance: {fileID: 5434407059760995398}
   m_PrefabAsset: {fileID: 0}

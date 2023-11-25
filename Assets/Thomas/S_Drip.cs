@@ -1,24 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class S_Drip : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.rigidbody != null)
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 300f, ForceMode2D.Force);
-        }
-    }
+    public Color dripColor;
+    public SpriteRenderer sprite;
 
     private void Start()
     {
-        StartCoroutine(KillAfterTime());
+        sprite.color = dripColor;
     }
 
-    IEnumerator KillAfterTime()
-    {
-        yield return new WaitForSeconds(4f);
-    }
 }

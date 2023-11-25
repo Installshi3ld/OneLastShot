@@ -27,7 +27,9 @@ public class S_GlassFilling : MonoBehaviour
             if(glassFillingText)
                 glassFillingText.text = glassFilling.value.ToString();
 
-            liquid.GetComponent<SpriteRenderer>().sprite = glassLiquid[(int)glassFilling.value / 25];
+            var liquidSprite = liquid.GetComponent<SpriteRenderer>();
+            liquidSprite.sprite = glassLiquid[(int)glassFilling.value / 25];
+            liquidSprite.color = collision.gameObject.GetComponent<S_Drip>().dripColor;
             glass.GetComponent<SpriteRenderer>().sprite = glassOutside[(int)glassFilling.value / 25];
         }
     }
