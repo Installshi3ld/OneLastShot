@@ -24,6 +24,8 @@ public class S_VolumeSettings : MonoBehaviour
 
     private void Start()
     {
+        panel.SetActive(false);
+
         resolutions = Screen.resolutions;
         filteredResolutions = new List<Resolution>();
 

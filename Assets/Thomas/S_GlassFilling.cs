@@ -14,17 +14,23 @@ public class S_GlassFilling : MonoBehaviour
     public Sprite[] liquidBack;
     public Sprite[] liquidBaackContour;
 
-    private int megotAmount = 0;
+    public int megotAmount = 0;
     public List<Transform> anchorMegot;
 
     public GameObject iceAnchor, lemonAnchor, chipsAnchor;
-    private bool gotIce, gotLemon, gotChips;
+    public bool gotIce, gotLemon, gotChips;
 
     float[] tmpPos = { -2.1f, -0.98f, 0.77f, 2.55f };
     private void Start()
     {
         glassFilling.value = 0;
     }
+
+    private void Update()
+    {
+        print(megotAmount);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print(collision.gameObject.tag);

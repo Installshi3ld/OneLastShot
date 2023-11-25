@@ -1,8 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Android.Gradle.Manifest;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 public class S_UmbrellaController : MonoBehaviour
