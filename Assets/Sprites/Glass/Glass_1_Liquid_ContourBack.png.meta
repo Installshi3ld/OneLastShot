@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Glass_1_Liquid_ContourBack_0: 517231549358330746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
