@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 23268c5273d5b714297a9450d0b0b601
+guid: 91aaebea3249d5145b44f800897bb40f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 603731517136992728
-    second: Button_0_clicked_0
+      213: 3901072056911663368
+    second: Glass_2_Liquid_ContourBack_0
+  - first:
+      213: -7436405777027286917
+    second: Glass_2_Liquid_ContourBack_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -110,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Button_0_clicked_0
+      name: Glass_2_Liquid_ContourBack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1903
-        height: 1043
+        x: 331
+        y: 367
+        width: 349
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +127,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d978aabd92e06800800000000000000
-      internalID: 603731517136992728
+      spriteID: 8011c63fd54632630800000000000000
+      internalID: 3901072056911663368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glass_2_Liquid_ContourBack_1
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 383
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7830a678549cc890800000000000000
+      internalID: -7436405777027286917
       vertices: []
       indices: 
       edges: []
@@ -133,7 +157,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +165,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Button_0_clicked_0: 603731517136992728
+      Glass_2_Liquid_ContourBack_0: 3901072056911663368
+      Glass_2_Liquid_ContourBack_1: -7436405777027286917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
