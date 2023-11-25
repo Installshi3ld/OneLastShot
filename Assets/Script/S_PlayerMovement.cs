@@ -8,6 +8,8 @@ public class S_PlayerMovement : MonoBehaviour
     public S_PlayerSpeed playerSpeed;
     public float jumpStrength;
 
+    private S_PlayerGravity gravity;
+
     private bool player1DoubleJump;
     private bool player2DoubleJump;
     private float jumpDelay;
@@ -21,6 +23,8 @@ public class S_PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        rb.gravityScale = gravity.value;
     }
 
     private void Update()
@@ -111,5 +115,13 @@ public class S_PlayerMovement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(checkGround.position, groundRadius, ground);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ground"))
+        {
+            print("Music");
+        }
     }
 }
