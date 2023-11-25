@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f693063bebaf7d14e8270135d86c5254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startAnimation: {fileID: 0}
   playerSpeed: {fileID: 11400000, guid: 27bec1e094b9dc3439be599901b4be10, type: 2}
   jumpPower: 15
   gravity: 5

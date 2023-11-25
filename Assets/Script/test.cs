@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class S_PlayerMovement : MonoBehaviour
+public class test : MonoBehaviour
 {
     public Animator startAnimation;
     public S_PlayerSpeed playerSpeed;
@@ -46,12 +46,12 @@ public class S_PlayerMovement : MonoBehaviour
         }
         else if (!IsGrounded())
         {
-            if (player1DoubleJump && Player1IsJumping() && !Player2IsJumping() && Time.time < jumpDelay)
+            if(player1DoubleJump && Player1IsJumping() && !Player2IsJumping() && Time.time < jumpDelay) 
             {
                 player1DoubleJump = false;
                 DoubleJump();
             }
-            if (player2DoubleJump && Player2IsJumping() && !Player1IsJumping() && Time.time < jumpDelay)
+            if(player2DoubleJump && Player2IsJumping() && !Player1IsJumping() && Time.time < jumpDelay)
             {
                 player2DoubleJump = false;
                 DoubleJump();
@@ -61,6 +61,7 @@ public class S_PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
+        print("Jump");
         rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
         jumpDelay = Time.time + 0.3f;
     }
@@ -72,7 +73,7 @@ public class S_PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
             rb.velocity += new Vector2(rb.velocity.x, jumpStrength / 3f);
         }
-        else if (rb.velocity.y >= 0 && !IsGrounded())
+        else if(rb.velocity.y >= 0 && !IsGrounded())
         {
             rb.velocity += new Vector2(rb.velocity.x, jumpStrength / 3f);
         }
@@ -84,7 +85,7 @@ public class S_PlayerMovement : MonoBehaviour
 
     public bool Player1IsJumping()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             return true;
         }
