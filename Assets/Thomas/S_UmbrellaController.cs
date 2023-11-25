@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Android.Gradle.Manifest;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
@@ -30,8 +31,12 @@ public class S_UmbrellaController : MonoBehaviour
         umbrellaCanChange.value = true;
     }
 
+    float timeBeforeMoovingUmbrella;
     void Update()
     {
+        timeBeforeMoovingUmbrella += Time.deltaTime;
+        //print(timeBeforeMoovingUmbrella);
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             if (umbrellaCanChange.value)
@@ -40,7 +45,6 @@ public class S_UmbrellaController : MonoBehaviour
                 StopAllCoroutines();
                 StartCoroutine(WaitForOpeningClosingUmbrella());
                 animator.SetBool("OpenUmbrella", isOpen);
-                print(boxCollider.points[0]);
                 umbrellaCanChange.value = false;
             }
         }
@@ -60,14 +64,19 @@ public class S_UmbrellaController : MonoBehaviour
 
         float rotationX = (Input.mousePosition.x - positionInitiale.x) * vitesseRotation;
 
+        if(rotationX < 0.05)
+        {
+            timeBeforeMoovingUmbrella = 0;
+        }
+
         totalRotation += rotationX * Time.deltaTime;
         totalRotation = Mathf.Clamp(totalRotation, -40f, 40f);
 
         Vector3 newRotation = new Vector3(0f, 0f, -totalRotation);
-
         transform.rotation = Quaternion.Euler(newRotation);
-
         positionInitiale = Input.mousePosition;
+
+
     }
 
     IEnumerator WaitForOpeningClosingUmbrella()

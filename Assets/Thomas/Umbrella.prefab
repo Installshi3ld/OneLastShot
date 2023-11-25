@@ -39,7 +39,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778612916076383472}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -129,10 +129,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5daf378893b5ed04ab19b4024264f449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesseRotation: 79.7
+  vitesseRotation: 50
+  gravityDefault: 0
+  isOpen: 0
   boxCollider: {fileID: 8373244623878699564}
   animator: {fileID: 4443289507245040924}
   umbrellaCanChange: {fileID: 11400000, guid: 395c28dac4c8dea48a19490844056dd7, type: 2}
+  rb: {fileID: 0}
 --- !u!1001 &4676435773049199474
 PrefabInstance:
   m_ObjectHideFlags: 0
