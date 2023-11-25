@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3294702071899311027, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
       propertyPath: m_Name
-      value: MegoSpawner
+      value: LemonSpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6998158059503892938, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,12 +54,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150740110371252145, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
       propertyPath: ObjectSpawnable.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150740110371252145, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
       propertyPath: 'ObjectSpawnable.Array.data[0]'
       value: 
-      objectReference: {fileID: 140493587612500266, guid: 5a7174166c3bb8e4cbc8e589c42f1871, type: 3}
+      objectReference: {fileID: 140493587612500266, guid: f40abef6f367158408a778b81af4d041, type: 3}
     - target: {fileID: 9150740110371252145, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
       propertyPath: 'ObjectSpawnable.Array.data[1]'
       value: 
