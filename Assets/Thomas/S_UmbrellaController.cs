@@ -43,6 +43,14 @@ public class S_UmbrellaController : MonoBehaviour
             if (umbrellaCanChange.value)
             {
                 isOpen = !isOpen;
+                if (isOpen)
+                {
+                    audioSourceOpenning.Play();
+                }
+                else
+                {
+                    audioSourceClosed.Play();
+                }
                 StopAllCoroutines();
                 StartCoroutine(WaitForOpeningClosingUmbrella());
                 animator.SetBool("OpenUmbrella", isOpen);

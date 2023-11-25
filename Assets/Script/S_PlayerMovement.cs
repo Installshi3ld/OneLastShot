@@ -37,6 +37,8 @@ public class S_PlayerMovement : MonoBehaviour
         inputJumpPlayer2 = false;
         launched = false;
 
+        playerSpeed.value = playerSpeed.defaultValue;
+
         rb = GetComponent<Rigidbody2D>();
 
         rb.gravityScale = gravity.value;

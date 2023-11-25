@@ -24,6 +24,13 @@ public class endpoint : MonoBehaviour
     public AudioClip[] MedClips;
     public AudioClip[] BadClips;
 
+    public GameObject parentArm;
+    public GameObject childGlass;
+
+    public Animator ArmAnimator;
+    public Animator DoigtAnimator;
+    public Animator GameObjectAnimator;
+
     public S_PlayerSpeed playerSpeed;
     void Start()
     {
@@ -43,6 +50,13 @@ public class endpoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             print("helloend");
+            childGlass.transform.parent = parentArm.transform;
+            ArmAnimator.SetTrigger("animate");
+            DoigtAnimator.SetTrigger("animate");
+            GameObjectAnimator.SetTrigger("animate");
+
+            playerSpeed.value =  0;
+
             StartCoroutine(EndGame());
         }
     }

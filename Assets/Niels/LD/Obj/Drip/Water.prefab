@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9606345516bf214fbc83fcd98ef407b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dripColor: {r: 0.12388753, g: 0.6596742, b: 0.9056604, a: 0.62352943}
+  dripColor: {r: 0.21960784, g: 0.70980394, b: 0.31764707, a: 0.62352943}
   sprite: {fileID: 6416622772630499872}
 --- !u!114 &7015442820129188043
 MonoBehaviour:

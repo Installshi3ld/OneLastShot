@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 51dc0640aba9edf45b8b7133eb6eeae0
+guid: 3111b837b8d59e24ab52003cd6373a78
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 275730688643692990
-    second: 447-4471398_gears-icon-png-download-setting-icon-gray-png_0
+      213: -4152597966306273521
+    second: logo 2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 447-4471398_gears-icon-png-download-setting-icon-gray-png_0
+      name: logo 2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 860
-        height: 666
+        x: 20
+        y: 4
+        width: 275
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb9f746b99793d300800000000000000
-      internalID: 275730688643692990
+      spriteID: f071e4ba6220f56c0800000000000000
+      internalID: -4152597966306273521
       vertices: []
       indices: 
       edges: []
@@ -133,7 +133,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      447-4471398_gears-icon-png-download-setting-icon-gray-png_0: 275730688643692990
+      logo 2_0: -4152597966306273521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
