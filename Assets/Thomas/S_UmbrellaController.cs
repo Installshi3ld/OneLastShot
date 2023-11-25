@@ -10,24 +10,31 @@ public class S_UmbrellaController : MonoBehaviour
     private float totalRotation = 0f;
 
     private bool isOpen = false;
-    public BoxCollider2D boxCollider;
+    public PolygonCollider2D boxCollider;
 
     public Animator animator;
-    
+    public S_UmbrellaOpen umbrellaCanChange;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.lockState = CursorLockMode.None;
         positionInitiale = Input.mousePosition;
+        umbrellaCanChange.value = true;
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            isOpen = !isOpen;
-            boxCollider.enabled = isOpen;
-            animator.SetBool("OpenUmbrella", isOpen);
+            if (umbrellaCanChange.value)
+            {
+                isOpen = !isOpen;
+                StopAllCoroutines();
+                StartCoroutine(WaitForOpeningClosingUmbrella());
+                animator.SetBool("OpenUmbrella", isOpen);
+                print(boxCollider.points[0]);
+                umbrellaCanChange.value = false;
+            }
         }
 
         float rotationX = (Input.mousePosition.x - positionInitiale.x) * vitesseRotation;
@@ -40,5 +47,11 @@ public class S_UmbrellaController : MonoBehaviour
         transform.rotation = Quaternion.Euler(newRotation);
 
         positionInitiale = Input.mousePosition;
+    }
+
+    IEnumerator WaitForOpeningClosingUmbrella()
+    {
+        yield return new WaitForSeconds(0.15f);
+        boxCollider.enabled = isOpen;
     }
 }
