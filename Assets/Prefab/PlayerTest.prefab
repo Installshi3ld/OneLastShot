@@ -58,12 +58,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3507489851226641687}
-  - component: {fileID: 8274034215158000672}
   - component: {fileID: 3838655202913075523}
   - component: {fileID: 4638509018789541351}
   - component: {fileID: 8071139556727161852}
+  - component: {fileID: -5765981875850115728}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerTest
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,25 +87,6 @@ Transform:
   - {fileID: 3326839044604963946}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8274034215158000672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2303831516481364974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f693063bebaf7d14e8270135d86c5254, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startAnimation: {fileID: 4656412737241282390}
-  playerSpeed: {fileID: 11400000, guid: 27bec1e094b9dc3439be599901b4be10, type: 2}
-  jumpStrength: 15
-  checkGround: {fileID: 2101071864730681672}
-  ground:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!50 &3838655202913075523
 Rigidbody2D:
   serializedVersion: 4
@@ -225,6 +206,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.33, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &-5765981875850115728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2303831516481364974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e220b29be95ff24aae57111ff3c518b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpStrength: 15
+  checkGround: {fileID: 2101071864730681672}
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &3446632427775389040
 GameObject:
   m_ObjectHideFlags: 0
