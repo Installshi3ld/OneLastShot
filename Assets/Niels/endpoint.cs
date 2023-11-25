@@ -34,11 +34,26 @@ public class endpoint : MonoBehaviour
     IEnumerator EndGame()
     {
         //Stop player velocity
+        //getPlayerCurrentScore and select a end sound
         //Play end sound array
         yield return new WaitForSeconds(3);
 
         canvas.gameObject.SetActive(true);
         //Redirect to next level menu
         Time.timeScale = 0;
+    }
+
+    void SelectEndSound(int pscore)
+    {
+        if(pscore >= 2)
+        {
+            //High
+        }
+        else if(pscore >= 1){
+            //Avg
+        }
+        else { 
+            //Bad
+        }
     }
 }
