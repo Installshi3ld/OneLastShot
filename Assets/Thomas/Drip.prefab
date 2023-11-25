@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9606345516bf214fbc83fcd98ef407b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dripColor: {r: 0.6509804, g: 0.5568628, b: 0.2901961, a: 1}
+  dripColor: {r: 0.6509804, g: 0.5568628, b: 0.2901961, a: 0.62352943}
   sprite: {fileID: 6416622772630499872}
 --- !u!114 &7015442820129188043
 MonoBehaviour:
@@ -230,7 +230,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 10d876cb11f499f4a9af73437ca2b18b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
