@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2821211350786139723}
   m_Layer: 7
   m_Name: IceCube
-  m_TagString: drip
+  m_TagString: ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf286d5af497374b8b8bcd9a587d80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  min: 5
+  max: 10
 --- !u!61 &4375680099453865427
 BoxCollider2D:
   m_ObjectHideFlags: 0
