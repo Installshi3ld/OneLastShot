@@ -15,11 +15,21 @@ public class endpoint : MonoBehaviour
     private int activeBool = 0;
     private float score2 = 0.0f;
     private float tmpScore;
+    public AudioSource winSound;
+    public AudioSource HighSound;
+    public AudioSource MedSound;
+    public AudioSource BadSound;
+
+    public AudioClip[] HighClips;
+    public AudioClip[] MedClips;
+    public AudioClip[] BadClips;
 
     public S_PlayerSpeed playerSpeed;
     void Start()
     {
-        
+        HighSound.clip = HighClips[Random.Range(0, HighClips.Length)];
+        MedSound.clip = MedClips[Random.Range(0, MedClips.Length)];
+        BadSound.clip = BadClips[Random.Range(0, BadClips.Length)];
     }
 
     // Update is called once per frame
@@ -39,15 +49,15 @@ public class endpoint : MonoBehaviour
 
     IEnumerator EndGame()
     {
-        //Stop player velocity
-        //getPlayerCurrentScore and select a end sound
+        
         //Play end sound array
+        winSound.Play();
         tmpScore = CalculateFirstScore();
         SelectEndSound(tmpScore);
         yield return new WaitForSeconds(3);
 
         canvas.gameObject.SetActive(true);
-        //Redirect to next level menu
+// STOP TIME HERE
         Time.timeScale = 0;
     }
 
@@ -60,7 +70,7 @@ public class endpoint : MonoBehaviour
         }
         if (insideGlass.gotLemon == true)
         {
-            score1 += 3;
+            score1 += 2;
             activeBool++;
         }
         if (insideGlass.gotChips == true)
@@ -71,29 +81,29 @@ public class endpoint : MonoBehaviour
 
         score1 = score1 + insideGlass.megotAmount * (-1);
 
-        score2 = score1 * 100 / (activeBool + insideGlass.megotAmount);
+        score2 = score1 * 100 / (activeBool + (insideGlass.megotAmount)/1);
 
         return score2;
     }
 
     void SelectEndSound(float pscore)
     {
-        //Score based on Bool Ice/Lemon/Chips and megot int
-        // Ice = 2, Lemon = 3, Chips = -1, and each int of megot = -1
-        //Score_1*100/(NumberOfTrueBools+megotInt)
         print(score2);
         if (pscore >= 75)
         {
             //High
             print("highscore");
+            HighSound.Play();
         }
         else if(pscore >= 50){
             //Avg
-            print("madium");
+            print("medium");
+            MedSound.Play();
         }
         else {
             //Bad
             print("bad");
+            BadSound.Play();
         }
     }
 }
