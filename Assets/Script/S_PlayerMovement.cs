@@ -10,18 +10,26 @@ public class S_PlayerMovement : MonoBehaviour
 
     private S_PlayerGravity gravity;
 
-    private bool player1DoubleJump;
-    private bool player2DoubleJump;
-    private float jumpDelay;
-
     private Rigidbody2D rb;
 
     public Transform checkGround;
     private float groundRadius = 0.2f;
     public LayerMask ground;
 
+    private bool inputJumpPlayer1;
+    private bool inputJumpPlayer2;
+    private bool canDoubleJump;
+    private bool player1Jumped;
+
+    private float jumpTimer;
+    public float jumpMaxDelay;
+
     private void Start()
     {
+        canDoubleJump = false;
+        inputJumpPlayer1 = false;
+        inputJumpPlayer2 = false;
+
         rb = GetComponent<Rigidbody2D>();
 
         rb.gravityScale = gravity.value;
@@ -29,87 +37,110 @@ public class S_PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (startAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7)
+        if(canDoubleJump)
+        {
+            jumpTimer += Time.deltaTime;
+
+            if(jumpTimer >= jumpMaxDelay)
+            {
+                canDoubleJump = false;
+                jumpTimer = 0;
+            }
+        }
+
+        if (startAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
         {
             transform.position += Vector3.right * playerSpeed.value * Time.deltaTime;
         }
 
-        if (IsGrounded() && Player1And2IsJumping())
+        if(Input.GetKeyDown(KeyCode.Space)) 
         {
-            DoubleJump();
+            inputJumpPlayer1 = true;
         }
-        else if (IsGrounded() && Player1IsJumping() && !Player2IsJumping())
+        if(Input.GetKeyDown(KeyCode.UpArrow)) 
         {
-            player2DoubleJump = true;
-            Jump();
-        }
-        else if (IsGrounded() && Player2IsJumping() && !Player1IsJumping())
-        {
-            player1DoubleJump = true;
-            Jump();
-        }
-        else if (!IsGrounded())
-        {
-            if (player1DoubleJump && Player1IsJumping() && !Player2IsJumping() && Time.time < jumpDelay)
-            {
-                player1DoubleJump = false;
-                DoubleJump();
-            }
-            if (player2DoubleJump && Player2IsJumping() && !Player1IsJumping() && Time.time < jumpDelay)
-            {
-                player2DoubleJump = false;
-                DoubleJump();
-            }
+            inputJumpPlayer2 = true;
         }
     }
 
-    public void Jump()
+    private void FixedUpdate()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
-        jumpDelay = Time.time + 0.3f;
+        if(inputJumpPlayer1 && inputJumpPlayer2 && !canDoubleJump) 
+        {
+            if (IsGrounded())
+            {
+                DoubleJump();
+            }
+            inputJumpPlayer1 = false;
+            inputJumpPlayer2 = false;
+        }
+
+        if ((inputJumpPlayer1 || inputJumpPlayer2) && canDoubleJump )
+        {
+            if (inputJumpPlayer1 && !player1Jumped)
+            {
+                TransformJump();
+                canDoubleJump = false;
+                jumpTimer = 0;
+            }
+            if (inputJumpPlayer2 && player1Jumped)
+            {
+                TransformJump();
+                canDoubleJump = false;
+                jumpTimer = 0;
+            }
+            
+            inputJumpPlayer1 = false;
+            inputJumpPlayer2 = false;
+        }
+
+        if(inputJumpPlayer1) 
+        {
+            if (IsGrounded())
+            {
+                Jump();
+                canDoubleJump = true;
+                player1Jumped = true;
+            }
+            inputJumpPlayer1 = false;
+        }
+
+        if(inputJumpPlayer2) 
+        {
+            if (IsGrounded())
+            {
+                Jump();
+                canDoubleJump = true;
+                player1Jumped = false;
+            }
+
+            inputJumpPlayer2 = false;
+        }
     }
 
-    public void DoubleJump()
+    private void Jump()
     {
-        if (rb.velocity.y < 0 && !IsGrounded())
+        rb.velocity = Vector2.zero;
+        rb.velocity += new Vector2(rb.velocity.x, jumpStrength);
+    }
+
+    private void TransformJump()
+    {
+        if(rb.velocity.y < 0)
         {
             rb.velocity = Vector2.zero;
-            rb.velocity += new Vector2(rb.velocity.x, jumpStrength / 3f);
-        }
-        else if (rb.velocity.y >= 0 && !IsGrounded())
-        {
-            rb.velocity += new Vector2(rb.velocity.x, jumpStrength / 3f);
+            rb.velocity += new Vector2(rb.velocity.x, jumpStrength / 2f);
         }
         else
         {
-            Jump();
+            rb.velocity += new Vector2(rb.velocity.x, jumpStrength / 2f);
         }
     }
 
-    public bool Player1IsJumping()
+    private void DoubleJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            return true;
-        }
-        return false;
-    }
-    public bool Player2IsJumping()
-    {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            return true;
-        }
-        return false;
-    }
-
-    public bool Player1And2IsJumping()
-    {
-        if ((Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.UpArrow)) || (Input.GetKeyDown(KeyCode.UpArrow) && Input.GetKey(KeyCode.Space)))
-        {
-            return true;
-        }
-        return false;
+        rb.velocity += new Vector2(rb.velocity.x, jumpStrength);
+        rb.velocity += new Vector2(rb.velocity.x, jumpStrength / 1.5f);
     }
 
     private bool IsGrounded()
@@ -121,6 +152,7 @@ public class S_PlayerMovement : MonoBehaviour
     {
         if (collision.CompareTag("Ground"))
         {
+            canDoubleJump = false;
             print("Music");
         }
     }

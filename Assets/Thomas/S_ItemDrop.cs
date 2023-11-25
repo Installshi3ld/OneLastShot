@@ -12,13 +12,9 @@ public class S_ItemDrop : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 500f, ForceMode2D.Force);
         }
     }
+
     private void Start()
     {
-        StartCoroutine(KillAfterTime());
-    }
-
-    IEnumerator KillAfterTime()
-    {
-        yield return new WaitForSeconds(4f);
+        Destroy(gameObject, 8f);
     }
 }
