@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3920580529972488521, guid: f0bb4ea1632111b458dbb4cc605be566, type: 3}
       propertyPath: m_Name
-      value: SpawnerObject Variant
+      value: IceCubeSpawner
       objectReference: {fileID: 0}
     - target: {fileID: 7290312438669837643, guid: f0bb4ea1632111b458dbb4cc605be566, type: 3}
       propertyPath: ObjectSpawnable.Array.size
@@ -19,7 +19,7 @@ PrefabInstance:
     - target: {fileID: 7290312438669837643, guid: f0bb4ea1632111b458dbb4cc605be566, type: 3}
       propertyPath: 'ObjectSpawnable.Array.data[0]'
       value: 
-      objectReference: {fileID: 140493587612500266, guid: 771cb4c00cfbc114da04daed7b9ffd49, type: 3}
+      objectReference: {fileID: 140493587612500266, guid: 44e2f458e17af2e40803d3d213957276, type: 3}
     - target: {fileID: 8849540837103360816, guid: f0bb4ea1632111b458dbb4cc605be566, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.968292

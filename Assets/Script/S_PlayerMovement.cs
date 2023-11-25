@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,11 +25,17 @@ public class S_PlayerMovement : MonoBehaviour
     private float jumpTimer;
     public float jumpMaxDelay;
 
+    public AudioSource audioSourceJumping;
+    public AudioSource audioSourceLanding;
+    public AudioSource audioSourceSliding;
+    private bool launched;
+
     private void Start()
     {
         canDoubleJump = false;
         inputJumpPlayer1 = false;
         inputJumpPlayer2 = false;
+        launched = false;
 
         rb = GetComponent<Rigidbody2D>();
 
@@ -50,6 +57,13 @@ public class S_PlayerMovement : MonoBehaviour
 
         if (startAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
         {
+            if (!launched)
+            {
+                //only once
+                audioSourceSliding.loop = true;
+                audioSourceSliding.Play();
+                launched = true;
+            }
             transform.position += Vector3.right * playerSpeed.value * Time.deltaTime;
         }
 
@@ -122,6 +136,8 @@ public class S_PlayerMovement : MonoBehaviour
     {
         rb.velocity = Vector2.zero;
         rb.velocity += new Vector2(rb.velocity.x, jumpStrength);
+        audioSourceSliding.Pause();
+        audioSourceJumping.Play();
     }
 
     private void TransformJump()
@@ -139,6 +155,8 @@ public class S_PlayerMovement : MonoBehaviour
 
     private void DoubleJump()
     {
+        audioSourceSliding.Pause();
+        audioSourceJumping.Play();
         rb.velocity += new Vector2(rb.velocity.x, jumpStrength);
         rb.velocity += new Vector2(rb.velocity.x, jumpStrength / 1.5f);
     }
@@ -153,7 +171,8 @@ public class S_PlayerMovement : MonoBehaviour
         if (collision.CompareTag("Ground"))
         {
             canDoubleJump = false;
-            print("Music");
+            audioSourceLanding.Play();
+            audioSourceSliding.Play();
         }
     }
 }

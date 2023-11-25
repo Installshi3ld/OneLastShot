@@ -54,16 +54,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150740110371252145, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
       propertyPath: ObjectSpawnable.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9150740110371252145, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
       propertyPath: 'ObjectSpawnable.Array.data[0]'
       value: 
-      objectReference: {fileID: 140493587612500266, guid: 6471e85b104bb01458dcb85cc9f35082, type: 3}
+      objectReference: {fileID: 140493587612500266, guid: aab033ad2082f3247af9ca060908cb3b, type: 3}
     - target: {fileID: 9150740110371252145, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
       propertyPath: 'ObjectSpawnable.Array.data[1]'
       value: 
-      objectReference: {fileID: 140493587612500266, guid: 6368af564f3338545843a6dac4b972bb, type: 3}
+      objectReference: {fileID: 140493587612500266, guid: e9fdfca519b59944bb9d1ef9b871f27f, type: 3}
+    - target: {fileID: 9150740110371252145, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
+      propertyPath: 'ObjectSpawnable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 140493587612500266, guid: 298c0df6660e2334e95e82833e21cda3, type: 3}
+    - target: {fileID: 9150740110371252145, guid: 0ebb72baa47bb9f4191d295d3a5fe619, type: 3}
+      propertyPath: 'ObjectSpawnable.Array.data[3]'
+      value: 
+      objectReference: {fileID: 140493587612500266, guid: eb1911e9bab973243983410c12a13949, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
