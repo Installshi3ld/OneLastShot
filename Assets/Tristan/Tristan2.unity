@@ -224,6 +224,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2641944319960605374, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 661489990}
+    - target: {fileID: 2641944319960605374, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+      propertyPath: gravityDefault
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3507489851226641687, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.63
@@ -696,6 +704,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundPlayer: {fileID: 241534107}
+--- !u!50 &661489990 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3838655202913075523, guid: dfa3d5e4f39f90d43b306a2e85853855, type: 3}
+  m_PrefabInstance: {fileID: 69043533}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &870343538
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2331b95586841cb4d888b3d47a74efda, type: 3}
-  m_Name: S_Data
+  m_Name: S_PlayerSpeed
   m_EditorClassIdentifier: 
   value: 11.25

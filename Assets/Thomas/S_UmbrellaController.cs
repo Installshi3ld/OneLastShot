@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Android.Gradle.Manifest;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
@@ -9,13 +10,20 @@ public class S_UmbrellaController : MonoBehaviour
     private Vector3 positionInitiale;
     private float totalRotation = 0f;
 
-    private bool isOpen = false;
+    public float gravityDefault;
+
+    public bool isOpen = false;
     public PolygonCollider2D boxCollider;
 
     public Animator animator;
     public S_UmbrellaOpen umbrellaCanChange;
+
+    public Rigidbody2D rb;
+    private S_PlayerGravity gravity;
     void Start()
     {
+        gravity.value = gravityDefault;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.lockState = CursorLockMode.None;
         positionInitiale = Input.mousePosition;
@@ -35,6 +43,19 @@ public class S_UmbrellaController : MonoBehaviour
                 print(boxCollider.points[0]);
                 umbrellaCanChange.value = false;
             }
+        }
+
+        if (isOpen)
+        {
+            rb.gravityScale = 8;
+            if(rb.velocity.y < 0)
+            {
+                rb.gravityScale = 0.5f;
+            }
+        }
+        else
+        {
+            rb.gravityScale = gravityDefault;
         }
 
         float rotationX = (Input.mousePosition.x - positionInitiale.x) * vitesseRotation;
