@@ -38,7 +38,6 @@ public class S_UmbrellaController : MonoBehaviour
                 StopAllCoroutines();
                 StartCoroutine(WaitForOpeningClosingUmbrella());
                 animator.SetBool("OpenUmbrella", isOpen);
-                print(boxCollider.points[0]);
                 umbrellaCanChange.value = false;
             }
         }

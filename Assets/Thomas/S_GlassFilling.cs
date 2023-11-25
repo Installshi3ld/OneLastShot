@@ -8,10 +8,11 @@ public class S_GlassFilling : MonoBehaviour
     public S_FillingData glassFilling = default(S_FillingData);
     public TextMeshProUGUI glassFillingText;
 
-    public GameObject glass;
-    public GameObject liquid;
+    public GameObject glass, liquid, glassLiquidBack, glassLiquidBaackContour;
     public Sprite[] glassLiquid;
     public Sprite[] glassOutside;
+    public Sprite[] liquidBack;
+    public Sprite[] liquidBaackContour;
 
     private int megotAmount = 0;
     public List<Transform> anchorMegot;
@@ -37,6 +38,11 @@ public class S_GlassFilling : MonoBehaviour
             liquidSprite.sprite = glassLiquid[(int)glassFilling.value];
             liquidSprite.color = collision.gameObject.GetComponent<S_Drip>().dripColor;
             glass.GetComponent<SpriteRenderer>().sprite = glassOutside[(int)glassFilling.value];
+
+            glassLiquidBack.GetComponent<SpriteRenderer>().sprite = liquidBack[(int)glassFilling.value];
+            glassLiquidBack.GetComponent<SpriteRenderer>().color = collision.gameObject.GetComponent<S_Drip>().dripColor;
+
+            glassLiquidBaackContour.GetComponent<SpriteRenderer>().sprite = liquidBaackContour[(int)glassFilling.value];
 
             /*
             iceAnchor.transform.position = new Vector3(iceAnchor.transform.position.x,
